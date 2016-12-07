@@ -4,4 +4,12 @@ body {
   line-height: 1.42857143;
   color: #c8c8c8;
   background-color: #272b30;
+  margin-top: 70px;
+}
+
+table {
+  width: 100%;
+}
+table th {
+  text-align: left;
 }

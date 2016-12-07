@@ -9,12 +9,16 @@ import { EntitylistComponent } from './entitylist/entitylist.component';
 import { NavbarComponent } from './navbar/navbar.component';
 
 import { routes } from './app.router';
+import { HomeComponent } from './home/home.component';
+import { TestComponent } from './test/test.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     EntitylistComponent,
-    NavbarComponent
+    NavbarComponent,
+    HomeComponent,
+    TestComponent
   ],
   imports: [
     BrowserModule,

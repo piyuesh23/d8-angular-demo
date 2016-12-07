@@ -2,10 +2,17 @@
   Loading data..
 </div>
 <ul *ngIf="!isLoading">
-  <div *ngFor="let t of entity; let i = index">
-    <span class="index entity-list">{{i}} </span>
-    <span class="title entity-list">{{t.title}}</span>
-    <span class="type entity-list">{{t.type}}</span>
-    <span class="created entity-list">{{t.created}}</span>
-  </div>
-</ul>
+<table>
+  <tr>
+    <th>Sl. no.</th>
+    <th>Title</th>
+    <th>Type</th>
+    <th>Created</th>
+  </tr>
+  <tr *ngFor="let t of entity; let i = index;">
+    <td>{{i}}</td>
+    <td>{{t.title}}</td>
+    <td>{{t.type}}</td>
+    <td>{{t.created}}</td>
+  </tr>
+</table>
